@@ -1,0 +1,30 @@
+/* Critical CSS - Above the fold styles */
+body{margin:0;font-family:Arial,sans-serif;background:#0a0a0a;color:#333;line-height:1.6;position:relative;overflow-x:hidden}
+body::before{content:'';position:fixed;top:0;left:0;width:100%;height:100%;background:radial-gradient(2px 2px at 20px 30px,#eee,transparent),radial-gradient(2px 2px at 40px 70px,rgba(255,255,255,0.8),transparent),radial-gradient(1px 1px at 90px 40px,#fff,transparent),radial-gradient(1px 1px at 130px 80px,rgba(255,255,255,0.6),transparent),radial-gradient(2px 2px at 160px 30px,#ddd,transparent);background-repeat:repeat;background-size:200px 100px;animation:twinkle 4s ease-in-out infinite alternate;z-index:-1}
+@keyframes twinkle{0%{opacity:0.3}100%{opacity:0.8}}
+.header{background:linear-gradient(45deg,#000,#333);color:#fff;padding:1rem;text-align:center}
+.logo{font-family:'Cinzel',serif;font-size:2.5rem;font-weight:bold;margin-bottom:0.5rem;background:linear-gradient(45deg,#ffd700,#fff3b0,#ffd700,#b8860b,#ffd700);background-size:300% 300%;-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 30px rgba(255,215,0,0.5),0 0 60px rgba(255,215,0,0.3);animation:logo-glow 4s ease-in-out infinite;position:relative;text-transform:uppercase;letter-spacing:3px;filter:drop-shadow(0 0 10px rgba(255,215,0,0.3))}
+.logo::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:120%;height:120%;background:radial-gradient(circle,rgba(255,215,0,0.1) 0%,transparent 70%);animation:logo-aura 6s ease-in-out infinite;z-index:-1}
+.logo::after{content:'✦';position:absolute;top:-10px;right:-20px;font-size:1.5rem;color:#ffd700;animation:star-twinkle 2s ease-in-out infinite alternate}
+@keyframes logo-glow{0%,100%{background-position:0% 50%;filter:drop-shadow(0 0 10px rgba(255,215,0,0.3))}50%{background-position:100% 50%;filter:drop-shadow(0 0 20px rgba(255,215,0,0.6))}}
+@keyframes logo-aura{0%,100%{opacity:0.3;transform:translate(-50%,-50%) scale(1)}50%{opacity:0.6;transform:translate(-50%,-50%) scale(1.1)}}
+@keyframes star-twinkle{0%{opacity:0.5;transform:scale(1)}100%{opacity:1;transform:scale(1.2)}}
+.phone-container{display:flex;align-items:center;justify-content:center;gap:1rem;margin:1rem 0}
+.phone-link{color:#fff;text-decoration:none;font-size:1.2rem;font-weight:bold}
+.description2{font-size:1rem;opacity:0.9}
+.titulo-mistico{text-align:center;margin:2rem 0;position:relative}
+.titulo-dorado{font-family:'Cinzel',serif;font-size:3rem;background:linear-gradient(45deg,#ffd700,#fff3b0,#ffd700);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 30px rgba(255,215,0,0.3);margin-bottom:1rem}
+.container{max-width:1200px;margin:0 auto;padding:0 1rem}
+.description{font-family:'Cinzel',serif;font-size:1.2rem;line-height:1.8;color:#ffd700;text-shadow:0 0 10px rgba(255,215,0,0.3);background:linear-gradient(45deg,rgba(0,0,0,0.8) 30%,rgba(20,20,20,0.9) 70%);padding:2rem;border:2px solid #ffd700;border-radius:15px;position:relative;overflow:hidden;backdrop-filter:blur(5px);box-shadow:0 0 30px rgba(255,215,0,0.1),inset 0 0 20px rgba(255,215,0,0.1);transform:translateZ(0);text-transform:uppercase;letter-spacing:1px}
+p.mystic-subtitle {color: white;text-shadow: 1px 1px 15px black;}
+.mystic-card{position:relative;max-width:800px;margin:2rem auto;border-radius:20px;overflow:hidden;transform:translateZ(0)}
+.mystic-image{width:100%;height:auto;min-height:400px;max-height:600px;object-fit:cover;filter:brightness(0.8) blur(2px);transition:filter 0.4s ease;border-radius:20px}
+.mystic-content{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;text-align:center;width:90%}
+.mystic-title{font-family:'Cinzel',serif;font-size:3.5rem;background:linear-gradient(45deg,#ffd700,#ffdf80,#ffd700);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 30px rgba(255,215,0,0.3);margin:0;animation:title-glow 2s ease-in-out infinite}
+.mystic-button{position:relative;display:inline-flex;align-items:center;gap:1rem;padding:1.2rem 2.5rem;background:linear-gradient(45deg,#ffd700,#b8860b,#ffd700);border:2px solid #ffd700;border-radius:50px;color:#000;text-decoration:none;font-weight:700;text-transform:uppercase;overflow:hidden;transition:all 0.4s cubic-bezier(0.4,0,0.2,1);box-shadow:0 0 40px rgba(255,215,0,0.3)}
+.contenedor-botones-misticos{position:fixed;bottom:2rem;right:2rem;display:flex;flex-direction:column;gap:0.6rem;z-index:9999}
+.boton-magico{max-width:250px;position:relative;display:flex;align-items:center;gap:1rem;padding:1.2rem 2rem;border-radius:50px;text-decoration:none;transform:translateZ(0);transition:all 0.4s cubic-bezier(0.4,0,0.2,1);overflow:hidden;border:2px solid;backdrop-filter:blur(10px);background:linear-gradient(135deg,rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.5) 100%)}
+.whatsapp-btn{border-color:#25d366;box-shadow:0 0 40px rgba(37,211,102,0.3)}
+.llamada-btn{border-color:#ff4444;box-shadow:0 0 40px rgba(255,68,68,0.3)}
+@media (max-width:768px){.titulo-dorado{font-size:2rem}.mystic-title{font-size:2.5rem}.contenedor-botones-misticos{bottom:1rem;right:1rem}.mystic-image{min-height:300px;max-height:400px}.description{font-size:1rem;padding:1.5rem}.logo{font-size:2rem;letter-spacing:2px}.logo::after{font-size:1.2rem;top:-8px;right:-15px}}
+@keyframes title-glow{0%,100%{text-shadow:0 0 30px rgba(255,215,0,0.3)}50%{text-shadow:0 0 50px rgba(255,215,0,0.5)}} 
