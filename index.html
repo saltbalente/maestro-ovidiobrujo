@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=6">
+    <meta name="description" content="Brujeria">
+    <meta name="generator" content="HTML5">
+    <title>Brujo Jacob</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="./index.html">
+    
+    <!-- Preconnect hints para mejorar rendimiento -->
+    <link rel="preconnect" href="https://blogger.googleusercontent.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://static.cloudflareinsights.com">
+    
+    <!-- Compatibilidad con HTML5 para IE9 -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <!-- Estilos CSS principales -->
+    <style>
+        /* Variables CSS */
+        :root {
+            --main-color: #6BCBCA;
+            --body-font: normal normal 16px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+            --body-bg-color: #F8F8F8;
+            --emphasis-font: normal normal 20px Oswald;
+        }
+        
+        body {
+            font: var(--body-font);
+            background: var(--body-bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        
+        img#imagen-anima {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* Animaciones */
+        @keyframes animateUnderline {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+        
+        @keyframes moveFromBottom {
+            from { bottom: -100%; }
+            to { bottom: 0; }
+        }
+        
+        @keyframes vibrate {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-2px); }
+            75% { transform: translateX(2px); }
+        }
+        
+        /* Estilos específicos para páginas individuales */
+        .item #primary { display: inline; }
+        .item .content-header.emfont { display: none; }
+        .item .post-title.single-title.emfont {
+            border-top: 6px solid;
+            margin: 10px;
+        }
+        .item .testimonios { display: none; }
+        
+        /* Estilos para IE */
+        /*[if IE 9]*/
+        #side .widget.FollowByEmail .widget-content form .follow-by-email-submit {
+            margin: 0;
+            padding: 10px 10px;
+            font-size: 17px;
+        }
+        /*[endif]*/
+        
+        /*[if IE 8]*/
+        #footer-section .widget {
+            margin: 0 0 30px 30px;
+        }
+        #footer-section .widget:first-child {
+            margin: 0 0 30px 0;
+        }
+        /*[endif]*/
+        
+        /*[if IE 7]*/
+        #header-section { position: absolute; }
+        #header { z-index: 9999; }
+        .label-layout.carousel .content {
+            width: 100%;
+            height: 200px;
+        }
+        /*[endif]*/
+        
+        /* Estilos para botones de palabras */
+        .word-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            color: white;
+            padding: 8px 16px;
+            margin: 5px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            font-size: 14px;
+        }
+        
+        .word-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            background: linear-gradient(45deg, #ff5252, #26a69a);
+        }
+        
+        ul#buttons-container-1,
+        ul#buttons-container-2 {
+            margin: 0 auto;
+            text-align: center;
+            list-style: none;
+            padding: 0;
+        }
+        
+        /* Contenedor WhatsApp */
+        #whatsapp-container {
+            background: linear-gradient(45deg, #005C1A, #028f2a, #005C1A);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            margin: 20px 0;
+        }
+        
+        /* Optimizaciones para CLS */
+        #contenido-dinamico {
+            min-height: 100vh;
+        }
+        
+        .container {
+            min-height: 50px;
+        }
+        
+        .container-random {
+            position: relative;
+            min-height: 320px;
+        }
+        
+        .testimonials-container {
+            min-height: 400px;
+        }
+        
+        .testimonial {
+            min-height: 120px;
+        }
+        
+        .testimonial-img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+        }
+        
+        /* Reservar espacio para elementos dinámicos */
+        #wordsContainer {
+            min-height: 40px;
+            margin: 20px 0;
+        }
+        
+        #buttons-container-2 {
+            min-height: 60px;
+        }
+    </style>
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Maestro Jacob",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "Estados Unidos"
+        },
+        "review": [
+            {
+                "@type": "Review",
+                "reviewBody": "Este sitio es genial, me ayudó mucho a encontrar la información que necesitaba."
+            },
+            {
+                "@type": "Review",
+                "reviewBody": "Excelente sitio, lo recomiendo a todos."
+            }
+        ]
+    }
+    </script>
+</head>
+
+<body class="home">
+    <div class="home wrapper">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">BRUJO EXPERTO</div>
+            <div class="phone-container">
+                <a class="phone-link" href="tel:4088826615">4088826615</a>
+                <div class="call-icon">
+                    <i class="fa fa-phone"></i>
+                </div>
+            </div>
+            <div class="description2">Pague al ver resultados</div>
+        </header>
+        
+        <!-- Contenido principal -->
+        <main id="contenido-dinamico">
+            <div id="text"></div>
+            
+            <h2 id="conta3" style="text-align: center;">
+                <span style="color: white; font-style: italic;">Maestro</span> 
+                <span style="color: white;">Jacob</span>
+                <span style="position: relative;">
+                    <span style="background-color: white; position: absolute; bottom: -3px; left: 0; right: 0; height: 2px; animation: animateUnderline 5s linear infinite;"></span>
+                </span>
+            </h2>
+            
+            <section class="container" id="conta2">
+                <p class="description">Atraigo y regresos al ser querido en 72 horas sin importar la edad, sexo, tiempo, ni distancia. Cruzándolo mente, cuerpo y espíritu dominando pensamiento y sentimiento hasta doblegarlo y quitarle infidelidad, indiferencia, rebeldía, orgullo y retiro rival.</p>
+            </section>
+            
+            <section class="container" id="sparkling">
+                <p class="description" style="text-align: center; color: palegoldenrod; font-weight: bolder; font-size: x-large;">¡OJO, DONDE OTROS HAN FRACASADO! ¡¡YO TRIUNFO!!</p>
+            </section>
+            
+            <div class="centrado">
+                <a class="whatsapp-button" href="https://wa.me/14088826615?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20sobre%20sus%20servicios">CONTACTA POR WHATSAPP</a>
+            </div>
+            
+            <section class="container">
+                <p class="description" style="text-align: center; font-family: ui-monospace; font-weight: bolder; font-size: 28px;">¡CONSULTA GRATIS!</p>
+            </section>
+            
+            <section class="container">
+                <p class="description">Conmigo harás tus deseos realidad a través de los poderosos amarres para atraerlo (a), sin importat en donde esté, sin daño alguno</p>
+            </section>
+            
+            <div id="telefono">
+                <a class="button-miwhatsapp" href="tel:4088826615" id="header-wa">
+                    <span class="whatsapp-icon">
+                        <svg data-bbox="15 5 19.904 20" data-type="shape" height="30" viewBox="15 5 19.904 20" width="50" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path d="M29.512 16.985c-.248-.124-1.465-.723-1.692-.806-.227-.082-.392-.123-.557.124-.165.248-.64.806-.784.971-.145.166-.29.186-.537.062-.247-.124-1.045-.385-1.991-1.229-.736-.656-1.233-1.467-1.378-1.715-.144-.248-.015-.382.109-.506.111-.11.248-.289.371-.433.124-.145.165-.248.248-.414.082-.165.041-.31-.02-.433-.063-.124-.558-1.343-.764-1.84-.201-.482-.405-.416-.557-.424a9.932 9.932 0 0 0-.475-.009.91.91 0 0 0-.66.31c-.227.248-.867.847-.867 2.066 0 1.219.887 2.396 1.011 2.561.124.166 1.746 2.667 4.23 3.74.591.255 1.053.407 1.412.521.593.189 1.133.162 1.56.098.476-.07 1.465-.599 1.671-1.177.207-.579.207-1.074.145-1.178-.062-.103-.227-.165-.475-.289m-4.518 6.17h-.004a8.225 8.225 0 0 1-4.192-1.149l-.3-.178-3.118.817.832-3.04-.196-.31a8.218 8.218 0 0 1-1.26-4.385c.002-4.541 3.697-8.236 8.241-8.236 2.2 0 4.268.859 5.824 2.416a8.188 8.188 0 0 1 2.41 5.827c-.002 4.542-3.697 8.237-8.237 8.237m7.01-15.248A9.846 9.846 0 0 0 24.994 5c-5.463 0-9.909 4.446-9.91 9.91a9.879 9.879 0 0 0 1.322 4.954L15 25l5.254-1.378a9.902 9.902 0 0 0 4.736 1.206h.004c5.462 0 9.908-4.446 9.91-9.91a9.851 9.851 0 0 0-2.9-7.012" fill-rule="evenodd"/>
+                            </g>
+                        </svg>
+                    </span>
+                    4088826615
+                </a>
+            </div>
+            
+            <section class="container">
+                <p class="description" style="font-size: 16px; font-weight: bold; color: #fff; text-shadow: 1px 1px #f96f6f; text-align: center; background: repeating-linear-gradient(280deg, black, transparent 100px);">Solución a toda clase de problemas: amor, suerte, dinero, salud, maleficios, enfermedades postizas, retiramos amantes, malas energías, posesiones, espíritus, salvamentos, hacemos protecciones, contras y sanciones espirituales.</p>
+                <a class="more-info" href="https://wa.me/14088826615?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20sobre%20sus%20servicios">Consulta en WhatsApp</a>
+            </section>
+            
+            <div class="container-random">
+                <img alt="Mujer leyendo el tarot" src="https://blogger.googleusercontent.com/img/a/AVvXsEjSuOA8ZGnJtQn_vmT5_YZWEf6CViva_0_ruXfRGkGecd8zaNZa7HP3736_S5kU966-Yp0RJ6Mhh6CXV1gdavhokkfTHo7-siH1iIOZaUk1EKNF7stocD3V0F9SmVlpFFyXyqFs2RaL_Pe2EhMDKjTzxaAmTGNofZ0NFmtJTm1V7L21P2yi1bDPWl5B3AWN=s16000" width="480" height="320" loading="lazy">
+                <div class="text-overlay-random">Tarot Gratis Real</div>
+                <div class="text-overlay-random" style="font-size: 24px; top: 70%;">Consulteme gratis con su nombre y fecha de nacimiento</div>
+                <a class="button-random" href="https://wa.me/14088826615?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20sobre%20sus%20servicios">
+                    <i class="fab fa-whatsapp"></i> Consulta Gratis
+                </a>
+            </div>
+            
+            <section class="container">
+                <p class="description">Soy un brujo altamente experimentado y con una gran reputación en el mundo de la brujería. Me he dedicado a estudiar y practicar la brujería durante más de 35 años, y he ayudado a cientos de personas a conseguir lo que desean en el ámbito amoroso, personal y profesional.</p>
+                <a class="more-info" href="https://wa.me/14088826615?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20sobre%20sus%20servicios">Consulta en WhatsApp</a>
+            </section>
+            
+            <div class="container" style="position: relative; max-height: auto;">
+                <img alt="image1" src="https://blogger.googleusercontent.com/img/a/AVvXsEheagcihj2ErCrGGTiR8telclOWAD3yEIJ-cJR3trTXm5bo0wSRp7p3ZS1yMrjTDE2iyw1uVJ7RwFPmj5rXMiEsODako0pMjKayhEYxLbhvIdQrNy_fZyxhXNZug9BePOGw1gvMOHq8iJtWian4iIq24zeIj2TIA9CqUVMBBmyoUeg2PxmtKvTtz3RXfw=s16000" style="margin-bottom: 11px; width: 480px; height: 320px;" width="480" height="320" loading="lazy">
+                <img alt="image2" src="https://blogger.googleusercontent.com/img/a/AVvXsEj56WUa-_fJ8QxnPbrtdV52htvY4MAZy6u1eMm7pvyGeBM85lTtOFEFeDgaCyVEg8BgMyABGCLjih_KP6lixJg4f4yYXaICSvHVCOQU9XDP9YZzJLF1SCBGa4oo-4IeSPSdjitmHy6qqJKwMaHbUfM8wCuL0pCtZ9YZ1TMMTOqspsB5vRGSyw7bLXYf=w400-h80" style="position: absolute; bottom: 258px; right: auto; width: 225px; height: 45px; animation: moveFromBottom 0.5s ease-in-out;" width="225" height="45" loading="lazy">
+                <h2 style="color: #e5e5e5;margin-right: 15px;">Brujo <span style="animation: vibrate 0.5s ease-in-out infinite; display: inline-block; color: gold;">Jacob</span></h2>
+                <a href="tel:4088826615">4088826615</a>
+            </div>
+            
+            <div id="wordsContainer"></div>
+            
+            <!-- Botón de chat con el maestro -->
+            <div class="chat-container">
+                <a href="https://wa.me/14088826615?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20sobre%20sus%20servicios">
+                    <button class="chat-button" id="chat-button">
+                        <img alt="Chat Icon" src="https://blogger.googleusercontent.com/img/a/AVvXsEgl-cJNzDJiGgRts24GdpBw4rkKnevm1Dm79MctzX3GfgqlIFCbGtZhILdUXqnx3lvkiN95QtgbcVU0TMY0G_rlI0OquCzFd9to54sw7BCZXmqc263ETIA0MnU6NHldR_W9r1PlEsHjGC7vRAhzGB_tYgVRryL90KDdUgpiinTZtqFmrK3Rpt2wXrRa" width="40" height="40" loading="lazy">
+                        <span id="chat-text">CHATEAR CON EL MAESTRO</span>
+                    </button>
+                </a>
+            </div>
+            
+            <!-- Botones de llamada y WhatsApp -->
+            <div class="container2">
+                <a href="tel:4088826615">
+                    <button class="call-btn">
+                        <img alt="phone" id="phone-btn" src="https://blogger.googleusercontent.com/img/a/AVvXsEhZPbThucClJ2DGn9VH9jsg1bX304xII45bOs9rq42XZq44GhvvZVIKRD_V7aMwu9OPGAqV1qx0SZDD29Fhh7DVBupWQwlPJJt0gYSQ39YFIIi967gZOvHRVpO_Mm7RHo_p0-mpzpLQhF2dUKnkfj3TgPaiJ5Zyder7QhBR0aFYDIoQmHOA_BNcCarM=w79-h79" style="width: 18px; height: 18px;" width="18" height="18" loading="lazy"> Llamar
+                    </button>
+                </a>
+                <a href="https://wa.me/14088826615?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20sobre%20sus%20servicios">
+                    <button class="whatsapp-btn">
+                        <img alt="whatsapp" id="whatsapp-btn2" src="https://blogger.googleusercontent.com/img/a/AVvXsEgJAo6Ne5978huT0V8QSPRNPh9lRrC8QlO2IqK58Hv0rm-CKrWG4SZ1DB6cYG3QDvgYcBKBafPDJlW_AWeBQ1ezAFWzaCXy4lA999xAl_3wd1cEMDluC7AAAQLvJm8RkEojyTl0QFCPvlGk2shEkkDU8FlpnD3VK46nqk9dCU8tf-JAC63cdv-I6nAB=w71-h71" style="width: 18px; height: 18px;" width="18" height="18" loading="lazy"> WhatsApp
+                        <div class="circle-text-container" id="text-center">
+                            <div class="circle"></div>
+                            <div class="conectado">en línea</div>
+                        </div>
+                    </button>
+                </a>
+            </div>
+            
+            <!-- Sección de testimonios -->
+            <section class="testimonials-container">
+                <div class="testimonial">
+                    <p class="testimonial-text">"Hola a todos les quiero decir que mi experiencia con el maestro Jacob ha sido satisfactoria. Siempre busco a varios brujos pero ninguno me sirvió. Así que les recomiendo el maestro Jacob."</p>
+                    <p class="testimonial-date">22 de Enero de 2023</p>
+                    <div class="testimonial-info">
+                        <img alt="Foto de persona" class="testimonial-img" src="https://blogger.googleusercontent.com/img/a/AVvXsEg2B6zIfqsnXdYXQ0K-4kos3hsVRKb2IOrP4rITvSsNXl6AIYVbK6oigQnqbnEWf9ixhwyuMVvrUIc7uMbVaLIRosv6sZv27PMl4xA4HWR-Im5MTREkDAI7H0MXzocyRFgzceA6sgDTtdpZOheHTZS3Ti0E8EJlNqdFp3lKhc-Q9Wa96LOtBgQZHIQ-" width="60" height="60" loading="lazy">
+                        <div class="testimonial-name-city">
+                            <p class="testimonial-name">Juana Pérez</p>
+                            <p class="testimonial-city">Miami, FL</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <p class="testimonial-text">"Ya con tan buenas experiencias que siempre he tenido con usted maestro creo que es hora de recomendarlo con mis amigos y toda persona que necesite un trabajo o consulta espiritual y de brujería. Gracias por ser esa persona que ayuda siempre cuando lo necesito."</p>
+                    <p class="testimonial-date">15 de Febrero de 2021</p>
+                    <div class="testimonial-info">
+                        <img alt="Foto de persona" class="testimonial-img" src="https://blogger.googleusercontent.com/img/a/AVvXsEiGukwTomxxWB3rhi14QxVwEvIr9XulhaIKKN_KYd03MHZudSCv102EelPJ_zYkqZ-VSEl0t-VeJHXel44v2QxocVLCsTnn8HCevHi4gfwIqTSDjakFqc9ui6k9ev_HO0Hfzy4dlzwtGhp3bVXe4FjlC7JiCpL6xAmFKvPoqTrdw_KF3MvKPxqrxBdE=s16000" width="60" height="60" loading="lazy">
+                        <div class="testimonial-name-city">
+                            <p class="testimonial-name">Maria Rodriguez</p>
+                            <p class="testimonial-city">Houston, TX</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <p class="testimonial-text">"Si no quieren perder su dinero con charlatanes les recomiendo al maestro Jacob. Siempre tiene ayuda para ti en lo que necesites. No existe nunca un no para todo lo que te atormente. Sus trabajos son muy bien hechos."</p>
+                    <p class="testimonial-date">15 de Junio de 2022</p>
+                    <div class="testimonial-info">
+                        <img alt="Foto de persona" class="testimonial-img" src="https://blogger.googleusercontent.com/img/a/AVvXsEh2RLHOk8JSRio9hzVI7Ryc3rGj5yMDgV5n6s7Ixo__nN3HNE2_-QHolkfpSQclFbsdPLkjG7rWp1jIH-OTNIbIXpgn236xIkLV6i0XGakfPKJBv3FWXlKuQV-Y4WBqR84lFCy5vLdEJgoYsvKK5gNIR6lZH3k3pcNpNnXrAY_drC_HvLRoLHMSWFjU=s16000" width="60" height="60" loading="lazy">
+                        <div class="testimonial-name-city">
+                            <p class="testimonial-name">Marcela Gutierrez</p>
+                            <p class="testimonial-city">New York, NY</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Lista de términos relacionados con brujería -->
+            <section class="terms-section">
+                <ul id="marcado" style="width: 90%; text-align: justify; margin: 0 auto;">
+                    <li><strong>Brujos</strong>: Los <strong>brujos</strong> son personas que practican la <strong>brujería</strong>, un conjunto de creencias y prácticas espirituales que incluyen el uso de <strong>rituales y hechizos</strong> para obtener ciertos resultados o influir en los acontecimientos.</li>
+                    <li><strong>Amarres de amor</strong>: Los amarres de amor son <strong>rituales o hechizos</strong> que se supone que pueden <strong>atraer el amor</strong> o fomentar la lealtad y el compromiso en una relación.</li>
+                    <li>Brujería: La <strong>brujería</strong> es un conjunto de <strong>creencias y prácticas espirituales</strong> que incluyen el uso de rituales y hechizos para obtener ciertos resultados o influir en los acontecimientos.</li>
+                    <li><strong>Brujería negra</strong>: La brujería negra es un término que se utiliza a veces para referirse a <strong>prácticas de brujería</strong> que se consideran malévolas o dañinas.</li>
+                    <li><strong>Espiritistas</strong>: Los espiritistas son personas que creen en la posibilidad de <strong>comunicarse con los espíritus de los muertos</strong> y utilizan diversas técnicas para intentar hacerlo.</li>
+                    <li><strong>Brujo mayor</strong>: El término «brujo mayor» puede ser utilizado para referirse a una persona que se considera especialmente hábil o poderosa en la práctica de la brujería.</li>
+                </ul>
+            </section>
+            
+            <!-- Contenedor adicional de botones -->
+            <div id="section2">
+                <ul id="buttons-container-2"></ul>
+            </div>
+            
+        </main>
+        
+        <!-- Contenedor de WhatsApp -->
+        <div id="whatsapp-container">
+            <span id="whatsapp-icon">📞</span> Consulta en WhatsApp Gratis!
+        </div>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div id="footer-info">
+                ❤️ Brujo Mayor Experto en Amarres y casos de pareja, atención personalizada las 24 Horas del día. Estados Unidos
+            </div>
+        </footer>
+    </div>
+    
+    <!-- CSS externo optimizado para no bloquear renderizado -->
+    <link href="https://cdn.jsdelivr.net/gh/saltbalente/cssismael@main/brujocss.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://cdn.jsdelivr.net/gh/saltbalente/cssismael@main/brujocss.css" rel="stylesheet" type="text/css"></noscript>
+    
+    <!-- JavaScript movido al final para optimizar carga -->
+    <!-- Google Tag Manager -->
+    <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T4TZ5N2');
+    </script>
+    
+    <!-- Script para efectos de texto brillante -->
+    <script>
+    setInterval(function() {
+        var sparkle = document.querySelectorAll("#sparkling");
+        sparkle.forEach(function(sparkle) {
+            sparkle.style.color = getRandomColor();
+            sparkle.style.textShadow = `0 0 5px ${getRandomColor()}, 0 0 10px ${getRandomColor()}, 0 0 15px ${getRandomColor()}, 0 0 20px ${getRandomColor()}, 0 0 35px ${getRandomColor()}, 0 0 40px ${getRandomColor()}, 0 0 50px ${getRandomColor()}, 0 0 75px ${getRandomColor()}`;
+        });
+    }, 200);
+    
+    function getRandomColor() {
+        var letters = "0123456789ABCDEF";
+        var color = "#";
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+    </script>
+    
+    <!-- Script para palabras aleatorias -->
+    <script>
+    const words = [
+        'los mejores brujos', 'brujos de verdad', 'brujos cerca de mi', 'brujos y hechiceros',
+        'brujos gratis en linea', 'brujeria negra', 'hechizos efectivos', 'tarot brujo',
+        'brujos en estados unidos', 'vudu brujeria', 'brujos consulta gratis', 'bruja',
+        'hechiceria', 'hechizo de amor', 'amarres de amor', 'hechizos efectivos',
+        'conjuro de amor', 'un amarre', 'amarres de amor brujeria', 'amarres efectivos para el amor',
+        'amarre a una persona', 'amarre amor', 'hechizo de endulzamiento', 'endulzamiento de amor',
+        'amarre de brujeria', 'espiritismo y santeria', 'espiritismo', 'centro espiritista',
+        'centro espiritista cerca de mi', 'brujo amarres', 'magia negra para el amor',
+        'hechizo para que regrese', 'como hacer un amarre de amor', 'un amarre de amor',
+        'hechizos para recuperar a tu pareja', 'brujo para amarres', 'que tan efectivo es un amarre de amor',
+        'amarres de amor near me', 'necesito un amarre de amor urgente', 'necesito un amarre de amor',
+        'los amarres son verdaderos', 'amarre de amor cerca de mi', 'brujeria', 'brujos',
+        'endulzamiento de pareja', 'brujeria brujeria', 'espiritista near me', 'brujos amarres',
+        'amarres de amor', 'brujeria para el amor', 'como hacer un amarre', 'poderoso amarre de amor',
+        'amarres gratis sin pagar nada', 'hechizo para una persona', 'conjuro amor', 'amarres fuertes',
+        'conjuros efectivos', 'endulzamiento fuerte', 'los brujos', 'la brujeria',
+        'endulzamiento efectivo', 'hechizo amarre amor', 'espiritualistas', 'brujeria de amor',
+        'rituales de canela', 'endulzamientos con miel y canela', 'brujería y santería',
+        'hacer brujeria', 'como amarrar aun hombre', 'santeria y brujeria', 'brujeria santeria',
+        'santería y brujería', 'santeria brujo', 'santeria es brujeria', 'amarres de amor caseros',
+        'salmos contra la brujería', 'los amarres de amor funcionan', 'brujo blanca', 'amarre brujeria',
+        'rituales de abundancia', 'brujeria cubana', 'amarres brujeria', 'brujeria amarre',
+        'brujos cubanos', 'endulzamientos con miel y nombre', 'hechizo para que me llame',
+        'hechizo para separar a dos personas', 'hechizo del zapato', 'brujeria negra',
+        'ritual para atraer dinero', 'amarre de amor que es', 'amarre con orina', 'amarres caseros',
+        'amarres de pareja', 'amarre con menstruación', 'hechizo fuerte para que me llame de inmediato',
+        'salmo 29 contra brujería', 'hechizo para alejar a una persona', 'amarres para el amor',
+        'endulzamiento con miel', 'brujeria verde', 'amarre de amor con orina', 'un amarre',
+        'brujos y hechiceros', 'trabajos de brujeria', 'rituales con la santa muerte',
+        'brujos colombianos', 'hechizos de luna', 'amarres de amor con la orina',
+        'hechizos harry potter', 'hechizos caseros para que me escriba en 5 minutos',
+        'rituales de luna llena', 'ritual para alejar a una persona', 'los brujos',
+        'endulzamiento de amor', 'endulzamientos de amor', 'brujeria de amor',
+        'rituales con canela', 'brujeria haitiana', 'brujería haitiana', 'brujeria magia negra',
+        'quitar amarres', 'amuletos contra la brujeria', 'limpia de brujeria', 'foto de brujeria',
+        'amuletos contra brujeria', 'mexico brujeria', 'hechizo para que me llame en 5 minutos',
+        'hechizo del vaso de agua para que te llame', 'amarres de amor efectivos',
+        'hechizo de la cebolla', 'los amarres funcionan', 'ritual para separar a dos personas',
+        'rituales de amor', 'brujeria blanca', 'brujo wicca', 'ritual de amor',
+        'ritual para el dinero', 'rituales de santeria', 'hechizos para que me llame en 5 minutos',
+        'brujos mexicanas', 'ser brujo', 'amarres con la santa muerte', 'brujeria mexicana',
+        'wicca brujo', 'hechizos con cebolla', 'brujeria con la santa muerte', 'hacer un endulzamiento',
+        'rituales con luna llena', 'santa muerte brujeria', 'amarres con santa muerte',
+        'amarres de amor gratis', 'amarres amorosos', 'brujos famosos', 'hechizo del zapato para dominar',
+        'amarre con ropa interior', 'hechizos de proteccion', 'hechizo para dominar a un hombre',
+        'hechizo para separar una pareja', 'brujos de verdad', 'brujos buenos', 'amarre con foto',
+        'rituales para el amor', 'ritual para que me llame', 'hechizo para enamorar a un hombre',
+        'brujeria con velas', 'hechizo para que me hable', 'hechizo para que me escriba',
+        'hechizo para atraer el amor', 'ritual para atraer el amor', 'hechizo para que me llame de inmediato',
+        'hechizo para que me llame ya', 'hechizo para que me llame urgente', 'hechizo para el amor',
+        'hechizo para que me ame', 'hechizo para que me busque', 'hechizo para que me extrañe',
+        'hechizo para que me desee', 'hechizo para que me piense', 'hechizo para que me necesite',
+        'hechizo para que me quiera'
+    ];
+    
+    function getRandomWords() {
+        const randomWords = [];
+        const wordsCopy = [...words]; // Crear una copia para no modificar el array original
+        for (let i = 0; i < 8; i++) {
+            const randomIndex = Math.floor(Math.random() * wordsCopy.length);
+            randomWords.push(wordsCopy[randomIndex]);
+            wordsCopy.splice(randomIndex, 1);
+        }
+        return randomWords;
+    }
+    
+    document.addEventListener("DOMContentLoaded", () => {
+        const container = document.getElementById("wordsContainer");
+        const randomWords = getRandomWords();
+        
+        randomWords.forEach((word) => {
+            const boldWord = document.createElement("strong");
+            boldWord.innerText = word;
+            container.appendChild(boldWord);
+            container.appendChild(document.createTextNode(" "));
+        });
+    });
+    </script>
+    
+    <!-- Script para botones adicionales -->
+    <script>
+    // Lista de palabras para botones
+    var wordsList = ["brujos", "consulta brujeria", "amarres de amor", "brujeria", "chaman", "brujos de catemaco", "consulta con brujos", "santeria", "babalawo", "brujos gratis", "amarres y hechizos", "hechizos de amor", "brujos expertos", "hacer un amarre", "expertos brujos", "brujeria de pareja"];
+    
+    // Función para elegir 4 palabras al azar
+    function chooseRandomWords() {
+        var randomWords = [];
+        while (randomWords.length < 4) {
+            var randomWord = wordsList[Math.floor(Math.random() * wordsList.length)];
+            if (!randomWords.includes(randomWord)) {
+                randomWords.push(randomWord);
+            }
+        }
+        return randomWords;
+    }
+    
+    // Función para crear y mostrar los botones
+    function showButtons(containerId) {
+        var buttonsContainer = document.getElementById(containerId);
+        if (buttonsContainer) {
+            var randomWords = chooseRandomWords();
+            for (var i = 0; i < randomWords.length; i++) {
+                var button = document.createElement("li");
+                button.innerHTML = randomWords[i];
+                button.classList.add("word-button");
+                buttonsContainer.appendChild(button);
+            }
+        }
+    }
+    
+    // Llamar a la función al cargar la página
+    document.addEventListener("DOMContentLoaded", () => {
+        showButtons("buttons-container-2");
+    });
+    </script>
+    
+    <!-- Script para WhatsApp -->
+    <script>
+    const whatsappLink = "https://wa.me/14088826615?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20sobre%20sus%20servicios";
+    
+    document.getElementById("whatsapp-container").addEventListener("click", function() {
+        window.open(whatsappLink, "_blank");
+    });
+    </script>
+    
+</body>
+</html>
