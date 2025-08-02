@@ -1,0 +1,41 @@
+/* Font Awesome optimizado - Solo iconos necesarios */
+@font-face {
+  font-family: 'Font Awesome 6 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/fontawesome/fa-brands-400.woff2') format('woff2');
+  unicode-range: U+F232; /* Solo incluye el icono de WhatsApp */
+}
+
+@font-face {
+  font-family: 'Font Awesome 6 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('../fonts/fontawesome/fa-solid-900.woff2') format('woff2');
+  unicode-range: U+F879, U+F095; /* Solo incluye los iconos de teléfono */
+}
+
+.fab {
+  font-family: 'Font Awesome 6 Brands';
+  font-weight: 400;
+}
+
+.fas {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+}
+
+/* Definiciones específicas de los iconos utilizados */
+.fa-whatsapp:before {
+  content: "\f232";
+}
+
+.fa-phone-alt:before {
+  content: "\f879";
+}
+
+.fa-phone:before {
+  content: "\f095";
+}
